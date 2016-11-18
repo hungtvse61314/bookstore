@@ -1,0 +1,58 @@
+.sign-in-page {
+  h4, h5 {
+    color: orange;
+  }
+
+  .btn {
+    background-color: orange;
+    color: white;
+  }
+
+  .forget-password-link {
+    line-height: 34px;
+    vertical-align: middle;
+  }
+
+  .sign-in-container {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+
+    form {
+      padding: 13px;
+    }
+
+    .foot {
+      margin-top: 20px;
+      background-color: #eeeeee;
+      padding: 10px 20px 10px 20px;
+
+      .content {
+        text-align: justify;
+      }
+
+      .register-link {
+        color: orange;
+        line-height: 30px;
+        vertical-align: middle;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:after {
+          vertical-align: middle;
+          font-family: 'FontAwesome';
+          content: '\f054';
+          margin-left: 5px;
+          font-size: 150%;
+        }
+      }
+    }
+  }
+
+  .separator {
+    border-top: 1px dashed gray;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
