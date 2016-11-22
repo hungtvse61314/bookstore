@@ -1,20 +1,30 @@
 <div class="book-show">
   <div class="book-image-container">
-    <img class="book-image" src="http://www.creativindie.com/wp-content/uploads/2013/10/Enchantment-Book-Cover-Best-Seller1.jpg">
+    <img class="book-image" src="<%= @book.photo_url %>">
   </div>
-  <div class="title"><%= @book.title %></div>
-  <div class="author">by <%= @book.author %></div>
-  <div class="description"><%= @book.description %></div>
-</div>
-<div class="container book-detail">
-  <span class="book-price col-sm-5">
-    <div class="price">$17.00</div>
-    <div>Save:20%</div>
-    <div>before $18.25</div>
-  </span>
-  <span class="book-cart col-sm-5">
-    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-  </span>
+  <div class="text-des">
+    <div class="title"><%= @book.title %></div>
+    <div class="author">by <%= @book.author %></div>
+    <span class="total-star">
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+    </span>
+    <span class="star-count">(<%= @book.total_rating_count %>)</span>
+    <div class="description"><%= @book.description %></div>
+  </div>
+  <div class="container book-detail">
+      <span class="book-price col-xs-6">
+        <div class="price"> $ <%= @book.price %></div>
+      </span>
+      <span class="book-cart col-xs-6">
+        <a class="btn-cart">
+          Add  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+      </span>
+  </div>
 </div>
 <div class="book-border">
   <div class="book-comment">
@@ -24,9 +34,6 @@
     </span>
     <div id="demo" class="collapse">
       <div class="star-mark">
-        <ul>
-
-        </ul>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>

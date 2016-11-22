@@ -6,46 +6,60 @@
 .book-show {
   .book-image-container {
     text-align: center;
-    
+    width: calc(100% - 0px);
+    display: inline-block;
     .book-image {
       width: 50%;
     }
   }
-
+  .star-count {
+    color: orange;
+    margin-left: 10px;
+  }
   .title {
     margin-top: 40px;
     color: orange;
-    font-size: 40px;
+    font-size: 20px;
   }
-
+  .text-des {
+    display: inline-block;
+    @media screen and (min-width: 780px)  {
+      width:40%;
+    }
+  }
   .author {
-    font-size: 30px;
+    font-size: 15px;
   }
 
   .description {
-    font-size: 30px;
+    font-size: 15px;
     margin-bottom: 40px;
   }
 }
 .book-detail {
-  margin-bottom: 20px;
   background-color: lightgray;
-  margin-right: -10px;
+  height: 100px;
+  display: inline-block;
   .book-price {
+    color: orange;
+    font-size: 50px;
+    font-weight: bold;
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
-    .price {
-      color: orange;
-      font-size: 100px;
-      font-weight: bold;
+    line-height: 100px;
+    @media screen and (min-width: 780px)  {
     }
   }
   .book-cart {
-    float: right;
-    font-size: 100px;
-    vertical-align: middle;
+    text-align: center;
+    line-height: 100px;
+    .btn-cart {
+      color: white;
+      background-color: orange;
+      padding: 15px 20px;
+      font-weight: bold;
+    }
   }
+
 }
 .book-comment {
   font-size: 40px;
