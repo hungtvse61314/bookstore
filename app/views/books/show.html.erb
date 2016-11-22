@@ -1,0 +1,54 @@
+<div class="book-show">
+  <div class="book-image-container">
+    <img class="book-image" src="http://www.creativindie.com/wp-content/uploads/2013/10/Enchantment-Book-Cover-Best-Seller1.jpg">
+  </div>
+  <div class="title"><%= @book.title %></div>
+  <div class="author">by <%= @book.author %></div>
+  <div class="description"><%= @book.description %></div>
+</div>
+<div class="container book-detail">
+  <span class="book-price col-sm-5">
+    <div class="price">$17.00</div>
+    <div>Save:20%</div>
+    <div>before $18.25</div>
+  </span>
+  <span class="book-cart col-sm-5">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+  </span>
+</div>
+<div class="book-border">
+  <div class="book-comment">
+    <span class="add-comment">Add your Comment:</span>
+    <span class="pull-right chevron-down">
+      <i class="fa fa-chevron-down" data-toggle="collapse" data-target="#demo"aria-hidden="true"></i>
+    </span>
+    <div id="demo" class="collapse">
+      <div class="star-mark">
+        <ul>
+
+        </ul>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+      <div class="text-comment">
+        <textarea rows="4" row="10"></textarea>
+      </div>
+      <div class="book-c-send">
+        <span class="cancel-button"><u>Cancel</u></span>
+        <span class="send-button">
+          <input type="button" class="button pull-right" value="Send">
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="totalcomment">
+  <div class="comment-title">Comment: (book.comment)</div>
+  <div class="ex-comment">
+    <div class="username-com">Xiamara Lee</div>
+    <div class="comment">Sản phẩm khi hoàn thành sẽ được giao cho Đặng Duy Quốc Thắng, và dành tặng đến Nguyễn Gia Nghi!</div>
+  </div>
+</div>

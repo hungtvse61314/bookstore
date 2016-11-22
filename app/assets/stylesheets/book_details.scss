@@ -1,0 +1,112 @@
+.book-border {
+  border-bottom: 1px solid darkgray;
+  border-top: 1px solid darkgray;
+  margin-bottom: 20px;
+}
+.book-show {
+  .book-image-container {
+    text-align: center;
+    
+    .book-image {
+      width: 50%;
+    }
+  }
+
+  .title {
+    margin-top: 40px;
+    color: orange;
+    font-size: 40px;
+  }
+
+  .author {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+.book-detail {
+  margin-bottom: 20px;
+  background-color: lightgray;
+  margin-right: -10px;
+  .book-price {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    .price {
+      color: orange;
+      font-size: 100px;
+      font-weight: bold;
+    }
+  }
+  .book-cart {
+    float: right;
+    font-size: 100px;
+    vertical-align: middle;
+  }
+}
+.book-comment {
+  font-size: 40px;
+  margin-bottom: 10px;
+  .add-comment {
+    color: orange;
+    font-weight: bold;
+  }
+  .chevron-down {
+    i {
+      color: orange;
+      font-size: 40px;
+    }
+  }
+  .star-mark {
+    color: lightgray;
+  }
+  .text-comment {
+    textarea
+    {
+      border:1px solid #999999;
+      width:100%;
+      margin:5px 0;
+      padding:3px;
+    }
+  }
+  .book-c-send {
+    margin-bottom: 40px;
+    .cancel-button {
+      color: blue;
+      font-size: 30px;
+    }
+    .button {
+      background-color: orange;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 30px;
+      margin-top: -5px;
+      cursor: pointer;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+  }
+}
+.totalcomment {
+  .comment-title {
+    color: orange;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .ex-comment {
+    font-size: 30px;
+    border-bottom: dotted;
+    .username-com {
+      color: orange;
+    }
+  }
+}
+
+
