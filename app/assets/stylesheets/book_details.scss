@@ -32,6 +32,7 @@
     padding: 0 10px 0 0;
     font-size: 15px;
     margin-bottom: 40px;
+    text-align: justify;
   }
 }
 .book-detail {
@@ -41,12 +42,12 @@
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    line-height: 100px;
+    line-height: 70px;
   }
   .book-cart {
     background-color: #ededed;
     text-align: center;
-    line-height: 100px;
+    line-height: 70px;
     .btn-cart {
       color: white;
       background-color: orange;
@@ -132,5 +133,3 @@
     }
   }
 }
-
-
