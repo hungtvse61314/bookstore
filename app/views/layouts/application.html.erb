@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Bookstore</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -8,9 +9,53 @@
   <%= growlyflash_static_notices %>
 </head>
 <body>
+<div class="nav-bar">
+  <div class="nav-top">
+    <span class="nav-book">bookstore</span>
+    <span class="nav-com">.com</span>
+    <span class="circle pull-right menubar visible-xs "><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+    <a href="#" class="pull-right hidden-xs">register</a>
+    <a href="#" class="pull-right hidden-xs">login</a>
+  </div>
+</div>
+<div class="searchcate">
+  <div class="nav-search">
+    <input type="text" placeholder="HarryPotter & Akaban Prison" >
+    <button class="circle"  ><i class="fa fa-search" aria-hidden="true"></i></button>
+  </div>
+  <div class="nav-category">
+    <div class="nav-title">Art, Architecture & Photography </div>
+  </div>
+  <div class="nav-cart">
+    <div class="nav-basket">
+      <span class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+      <span class="price">Cart ( $ , 0)</span>
+      <span class="total circle ">0</span>
+      <div></div>
+    </div>
+</div>
+</div>
 <div class="container">
   <%= yield %>
 </div>
-
 </body>
+<footer>
+  <div class="nav-foot">
+    <div class="foot-line">
+      <div class="foot-line1">Do you want to sell your books? </div>
+      <div class="foot-line2">Join BookStore.com today!</div>
+    </div>
+
+    <div class="right-corner pull-right">
+      <div class="focus">Follow us</div>
+      <span class="fb"><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
+      <span class="Twit"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+      <span class="Go"><i class="fa fa-google-plus-square" aria-hidden="true"></i></span>
+    </div>
+    <div class="foot-bottom">Copyright@2013 Bookstore is registered trademark of BookStore Pte Ltd.</div>
+
+
+
+  </div>
+</footer>
 </html>

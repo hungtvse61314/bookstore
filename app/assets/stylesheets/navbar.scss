@@ -1,0 +1,243 @@
+.nav-bar {
+  background-color: orange;
+
+  font-weight: bold;
+  font-size: 0;
+
+    .nav-top {
+      margin-left: 10px;
+      a {
+        font-size: 10px;
+        color: #1b3434;
+        margin-right: 10px;
+        display: inline-block;
+        line-height: 60px;
+
+      }
+
+      .login {
+        padding-right: 10px;
+        line-height: 60px;
+      }
+
+      .register{
+        margin-right: 5px;
+
+      }
+
+    }
+
+    .nav-book {
+      font-size: 30px;
+      color: black;
+      line-height:60px;
+
+    }
+
+    .nav-com {
+      font-size: 30px;
+      color: white;
+      line-height:60px;
+    }
+
+    i {
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    }
+}
+
+
+.circle{
+  height: 30px;
+  width: 30px;
+
+  border-radius: 50%;
+  text-align: center;
+  background-color: gray;
+  margin-right: 15px;
+  margin-top: 15px;
+  line-height: 15px;
+}
+
+.searchcate{
+  font-size: 0;
+
+  .nav-search {
+    background-color: #6a484d;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 0px);
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    @media (min-width: 992px) {
+      width: 33.33%;
+    }
+
+    input[type = text] {
+      font-size: 15px;
+      height: 30px;
+      width: calc(100% - 100px);
+      box-shadow: none;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+
+    }
+    button {
+      font-size: 10px;
+      background-color: orange;
+      padding: 0px;
+      border-radius: 50%;
+      color: white;
+      border:  0;
+      margin-left: 40px;
+      margin-top: 5px;
+      line-height: 30px;
+      i {
+
+        font-size: 15px;
+      }
+    }
+  }
+
+  .nav-category {
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    @media (min-width: 992px) {
+      width: 33.33%;
+    }
+    display: inline-block;
+    width: calc(100% - 0px);
+    background-color: #6e4136;
+    line-height: 50px;
+    font-weight: bold;
+    vertical-align: top;
+    .nav-title {
+      font-size: 15px;
+      color: white;
+      padding-left: 10px;
+      text-align: center;
+    }
+  }
+
+  .nav-cart {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    display: inline-block;
+    width: calc(100% - 0px);
+    @media (min-width: 992px) {
+        width: 33.34%;
+    }
+
+
+    .nav-basket{
+      background-color: #79788b;
+      text-align: center;
+      font-size: 15px;
+    }
+    .cart {
+      line-height: 40px;
+
+      i {
+        color: white;
+        transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+      }
+    }
+
+    .price {
+      line-height: 40px;
+      color:  white;
+      font-weight: bold;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .total {
+
+      display: inline-block;
+      height: 20px;
+      padding-top: 2px;
+      width: 20px;
+      margin-bottom: 5px;
+      margin-left: 10px;
+      background-color: orange;
+      color:  white;
+      font-weight: bold;
+
+
+    }
+  }
+}
+
+.nav-foot {
+  background-color: #666666;
+  color: white;
+  line-height: 50px;
+  font-weight: bold;
+
+  .foot-line{
+    display: inline-block;
+    margin-left: 10px;
+    .foot-line1 {
+      height: 30px;
+      width: 20px;
+      display: inline;
+    }
+    .foot-line2{
+      font-weight: normal;
+
+    }
+  }
+
+  .right-corner {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+
+      line-height: 30px;
+      .focus {
+        font-size: 20px;
+      }
+      .fb {
+         border: thin;
+        font-size: 30px;
+      }
+
+      .Twit {
+       border: thick;
+        font-size: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .Go {
+        font-size: 30px;
+      }
+  }
+
+  .foot-bottom {
+    background-color: #56422b;
+    padding-left: 10px;
+    font-size: x-small;
+  }
+}
+
+
+
+
+
+
+
+
