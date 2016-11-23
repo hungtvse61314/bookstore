@@ -1,8 +1,8 @@
 <div class="book-show">
-  <div class="book-image-container col-sm-4">
+  <div class="book-image-container col-sm-4 col-md-3">
     <img class="book-image" src="<%= @book.photo_url %>">
   </div>
-  <div class="description-and-price col-sm-8">
+  <div class="description-and-price col-sm-8 col-md-9">
     <div class="text-des">
       <div class="title"><%= @book.title %></div>
       <div class="author">by <%= @book.author %></div>
@@ -16,8 +16,8 @@
         </span>
         <span class="star-count">(<%= @book.total_rating_count %>)</span>
       </div>
-      <div class="description col-sm-7"><%= @book.description %></div>
-      <div class="book-detail col-sm-5 row">
+      <div class="description col-sm-7 col-md-8"><%= @book.description %></div>
+      <div class="book-detail col-sm-5 col-md-4 row">
         <span class="book-price col-xs-6 col-sm-12">
           <div class="price"> $ <%= @book.price %></div>
         </span>
@@ -30,39 +30,42 @@
     </div>
   </div>
 </div>
-<div class="book-border">
-  <div class="book-comment">
-    <span class="add-comment">Add your Comment:</span>
-    <span class="pull-right chevron-down">
+<div class="col-sm-12">
+  <div class="book-border">
+    <div class="book-comment">
+      <span class="add-comment">Add your Comment:</span>
+      <span class="pull-right chevron-down">
       <i class="fa fa-chevron-down rotate" data-toggle="collapse" data-target="#demo"aria-hidden="true"></i>
     </span>
-    <div id="demo" class="collapse">
-      <div class="star-mark">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-      <div class="text-comment">
-        <textarea rows="4" row="10"></textarea>
-      </div>
-      <div class="book-c-send">
-        <span class="cancel-button"><a href=""><u>Cancel</u></a></span>
-        <span class="send-button">
+      <div id="demo" class="collapse">
+        <div class="star-mark">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="text-comment">
+          <textarea rows="4" row="10"></textarea>
+        </div>
+        <div class="book-c-send">
+          <span class="cancel-button"><a href=""><u>Cancel</u></a></span>
+          <span class="send-button">
           <button name="button-send" type="submit" class="button pull-right">Send</button>
         </span>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="totalcomment">
-  <div class="comment-title">Comment: (book.comment)</div>
-  <div class="ex-comment">
-    <div class="username-com">Xiamara Lee</div>
-    <div class="comment">Sản phẩm khi hoàn thành sẽ được giao cho Đặng Duy Quốc Thắng, và dành tặng đến Nguyễn Gia Nghi!</div>
+  <div class="totalcomment">
+    <div class="comment-title">Comment: (book.comment)</div>
+    <div class="ex-comment">
+      <div class="username-com">Xiamara Lee</div>
+      <div class="comment">Sản phẩm khi hoàn thành sẽ được giao cho Đặng Duy Quốc Thắng, và dành tặng đến Nguyễn Gia Nghi!</div>
+    </div>
   </div>
 </div>
+
 
 <script>
   $(".rotate").click(function(){
