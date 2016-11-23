@@ -1,28 +1,34 @@
-
 .book-show {
+  
   .book-image-container {
     text-align: center;
+
     .book-image {
       margin-top: 40px;
     }
   }
+
   .book-border {
     border-bottom: 1px solid darkgray;
     border-top: 1px solid darkgray;
     margin-bottom: 20px;
   }
+
   .description-and-price {
     padding: 0;
   }
+
   .star-count {
     color: orange;
     margin-left: 10px;
   }
+
   .title {
     margin-top: 40px;
     color: orange;
     font-size: 20px;
   }
+
   .author {
     font-size: 15px;
   }
@@ -34,7 +40,9 @@
     text-align: justify;
   }
 }
+
 .book-detail {
+
   .book-price {
     background-color: #ededed;
     color: orange;
@@ -43,51 +51,61 @@
     text-align: center;
     line-height: 70px;
   }
+
   .book-cart {
     background-color: #ededed;
     text-align: center;
     line-height: 70px;
+
     .btn-cart {
       color: white;
       background-color: orange;
       padding: 15px 20px;
       font-weight: bold;
+
       i {
         font-size: 30px;
       }
     }
   }
-
 }
+
 .book-comment {
   font-size: 15px;
   margin-bottom: 10px;
+
   .add-comment {
     color: orange;
     font-weight: bold;
   }
+
   .chevron-down {
+
     .rotate{
       -moz-transition: all linear;
       -webkit-transition: all linear;
       transition: all linear;
     }
 
-    .rotate.down{
+    .rotate.down {
       -ms-transform:rotate(180deg);
       -moz-transform:rotate(180deg);
       -webkit-transform:rotate(180deg);
       transform:rotate(270deg);
     }
+
     i {
       color: orange;
       font-size: 15px;
     }
   }
+
   .star-mark {
     color: lightgray;
   }
+
   .text-comment {
+
     textarea
     {
       border:1px solid #999999;
@@ -96,12 +114,15 @@
       padding:3px;
     }
   }
+
   .book-c-send {
     margin-bottom: 40px;
+
     .cancel-button {
       color: blue;
       font-size: 15px;
     }
+
     .button {
       background-color: orange;
       border: none;
@@ -118,15 +139,19 @@
     }
   }
 }
+
 .totalcomment {
+
   .comment-title {
     color: orange;
     font-size: 15px;
     margin-bottom: 20px;
   }
+
   .ex-comment {
     font-size: 15px;
     border-bottom: dotted;
+
     .username-com {
       color: orange;
     }
