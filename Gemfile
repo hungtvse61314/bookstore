@@ -27,6 +27,7 @@ gem 'devise'
 gem 'omniauth-facebook'
 gem 'font-awesome-rails'
 gem 'growlyflash'
+gem 'figaro'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
