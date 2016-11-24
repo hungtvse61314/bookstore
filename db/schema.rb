@@ -17,8 +17,12 @@ ActiveRecord::Schema.define(version: 20161124091025) do
     t.string   "title"
     t.string   "description"
     t.string   "author"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "photo_url"
+    t.decimal  "price"
+    t.integer  "total_rating_count"
+    t.integer  "total_rating_value"
   end
 
   create_table "users", force: :cascade do |t|
