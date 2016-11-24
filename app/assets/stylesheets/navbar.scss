@@ -4,49 +4,54 @@
   font-weight: bold;
   font-size: 0;
 
-    .nav-top {
-      margin-left: 10px;
-      a {
-        font-size: 10px;
-        color: #1b3434;
-        margin-right: 10px;
-        display: inline-block;
-        line-height: 60px;
-
-      }
-
-      .login {
-        padding-right: 10px;
-        line-height: 60px;
-      }
-
-      .register{
-        margin-right: 5px;
-
-      }
+  .nav-top {
+    margin-left: 10px;
+    a {
+      font-size: 10px;
+      color: #1b3434;
+      margin-right: 10px;
+      display: inline-block;
+      line-height: 60px;
 
     }
 
-    .nav-book {
-      font-size: 30px;
-      color: black;
-      line-height:60px;
+    .login {
+      padding-right: 10px;
+      line-height: 60px;
+    }
+
+    .register{
+      margin-right: 5px;
 
     }
 
-    .nav-com {
-      font-size: 30px;
-      color: white;
-      line-height:60px;
-    }
+  }
 
-    i {
+  .nav-blank {
+    height: 40px;
+    background-color: #56422b;
+  }
+
+  .nav-book {
+    font-size: 30px;
+    color: black;
+    line-height:60px;
+
+  }
+
+  .nav-com {
+    font-size: 30px;
     color: white;
-    font-size: 15px;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    }
+    line-height:60px;
+  }
+
+  i {
+  color: white;
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  }
 }
 
 
@@ -181,42 +186,48 @@
   }
 }
 
-.nav-foot {
-  background-color: #666666;
-  color: white;
-  line-height: 50px;
-  font-weight: bold;
+footer {
+  margin-top: 20px;
 
-  .foot-line{
-    display: inline-block;
-    margin-left: 10px;
-    .foot-line1 {
-      height: 30px;
-      width: 20px;
-      display: inline;
+  .nav-foot {
+    background-color: #666666;
+    color: white;
+    line-height: 50px;
+    font-weight: bold;
+
+    .foot-line{
+      display: inline-block;
+      margin-left: 10px;
+
+      .foot-line1 {
+        height: 30px;
+        width: 20px;
+        display: inline;
+      }
+
+      .foot-line2{
+        font-weight: normal;
+
+      }
     }
-    .foot-line2{
-      font-weight: normal;
 
-    }
-  }
-
-  .right-corner {
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 10px;
-
+    .right-corner {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
       line-height: 30px;
+
       .focus {
         font-size: 20px;
       }
+
       .fb {
-         border: thin;
+        border: thin;
         font-size: 30px;
       }
 
       .Twit {
-       border: thick;
+        border: thick;
         font-size: 30px;
         margin-left: 5px;
         margin-right: 5px;
@@ -225,19 +236,12 @@
       .Go {
         font-size: 30px;
       }
-  }
+    }
 
-  .foot-bottom {
-    background-color: #56422b;
-    padding-left: 10px;
-    font-size: x-small;
+    .foot-bottom {
+      background-color: #56422b;
+      padding-left: 10px;
+      font-size: x-small;
+    }
   }
 }
-
-
-
-
-
-
-
-
