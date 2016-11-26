@@ -12,9 +12,14 @@
       </div>
 
       <div class='actions'>
-        <%= link_to 'Sign in with Facebook', user_facebook_omniauth_authorize_path %>
         <%= f.submit 'Send', class: 'btn pull-right' %>
         <%= link_to 'Forgot your password?', new_password_path(resource_name), class: 'forget-password-link' %>
+      </div>
+      <div class="text-center">
+        <div class="separator"></div>
+        <%= link_to user_facebook_omniauth_authorize_path do %>
+          <img src="/assets/facebook-btn.png" />
+        <% end %>
       </div>
     <% end %>
     <div class='foot'>
