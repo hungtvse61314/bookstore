@@ -6,5 +6,5 @@ Rails.application.routes.draw do
       passwords: 'users/passwords',
       omniauth_callbacks: 'users/omniauth_callbacks'
   }
-  root to: 'home#index'
+  root to: 'books#index'
 end
