@@ -1,0 +1,170 @@
+.book_index {
+  display: inline;
+  .book_category {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: orange;
+    font-size: 20px;
+  }
+
+  .book-lock {
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+    @media (min-width: 768px) {
+
+        height: 320px;
+
+
+    }
+
+
+    display: inline-block;
+
+    .book_img {
+      display: inline-block;
+      text-align: left;
+      @media (max-width: 768px ) {
+        img {
+          vertical-align: top;
+          display: inline-block;
+          object-fit: cover;
+          width: 80px;
+          height: 130px;
+        }
+      }
+      @media (min-width: 768px) {
+          img {
+        vertical-align: top;
+            display: inline-block;
+            object-fit: cover;
+            width: 130px;
+            height: 150px;
+          }
+      }
+
+    }
+
+
+    .lock_body {
+      display: inline-block;
+      vertical-align: top;
+
+      .book_name {
+        font-size: 0px;
+        color: orange;
+        display: inline-block;
+
+        .book_title {
+          width: calc(100% - 10px);
+          font-size: 20px;
+          display: inline-block;
+          @media (min-width: 768px) {
+            span {
+              width: 100%;
+              white-space: nowrap;
+              overflow : hidden;
+              text-overflow: ellipsis;
+
+
+
+            }
+          }
+
+
+        }
+        .book_arrow {
+          font-size: 20px;
+          display: inline-block;
+          span {
+            font-size: 20px;
+            display: inline;
+            line-height: 20px;
+            color: orange;
+
+          }
+        }
+
+
+      }
+
+
+
+      .book_rate {
+        margin-bottom: 10px;
+
+      }
+      .book_author {
+        color: deepskyblue;
+        font-size: 15px;
+
+      }
+
+      .book_description {
+        @media (min-width: 720px) {
+          p {
+            overflow : hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+          }
+        }
+        display: inline-block;
+        font-size: 15px;
+        width: 100%;
+
+
+      }
+
+    }
+
+    .lock_foot {
+      margin-top: 10px;
+      padding-top: 10px;
+      display: inline;
+      line-height: 80px;
+      height: 20px;
+      width: 100%;
+      .book_price {
+        display: inline;
+        float: left;
+        font-weight: bold;
+        color: orange;
+        line-height: 30px;
+
+      }
+      button {
+        margin-left: 50px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        line-height: 30px;
+        background-color: orange;
+        float: right;
+        i{
+          margin-left: 10px;
+          color: white;
+          font-size: 20px;
+        }
+      }
+
+
+    }
+
+
+  }
+
+  .book_line {
+    display: inline;
+
+    hr {
+
+      height: 2px;
+      border-radius: 50%;
+      border-color: #d0d0d0;
+    }
+  }
+
+}
