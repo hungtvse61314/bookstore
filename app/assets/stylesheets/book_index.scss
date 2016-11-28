@@ -51,38 +51,41 @@
       vertical-align: top;
 
       .book_name {
-        font-size: 0px;
         color: orange;
+        font-size: 0;
         display: inline-block;
 
+        width: 100%;
         .book_title {
-          width: calc(100% - 10px);
           font-size: 20px;
+          vertical-align: top;
           display: inline-block;
+          width: 80%;
           @media (min-width: 768px) {
-            span {
-              width: 100%;
+            .book_title {
+              width: 80%;
+            }
+            p {
+              width: 80%;
               white-space: nowrap;
-              overflow : hidden;
+              overflow: hidden;
               text-overflow: ellipsis;
-
-
 
             }
           }
-
-
         }
         .book_arrow {
-          font-size: 20px;
+          vertical-align: top;
           display: inline-block;
-          span {
+          font-size: 20px;
+          i {
             font-size: 20px;
-            display: inline;
+            display: inline-block;
             line-height: 20px;
             color: orange;
 
           }
+
         }
 
 
@@ -149,11 +152,7 @@
           font-size: 20px;
         }
       }
-
-
     }
-
-
   }
 
   .book_line {
