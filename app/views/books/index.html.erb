@@ -1,12 +1,40 @@
-<% @books.each do |book| %>
-    <div class="book-show col-xs-12">
-      <div class="col-xs-4">
-        <img class="book-image" src="<%= book.photo_url %>">
+<div class="book_index">
+  <div class="book_category hidden-xs">Art, Art& Architeture</div>
+  <% @books.each do  |book|  %>
+
+      <div class="book-lock col-xs-12 col-sm-6 col-md-4  ">
+
+        <div class="book_img col-xs-4 col-sm-12 col-md-12 "><img src="<%= book.photo_url %>"></div>
+        <div class="lock_body col-xs-8 col-sm-12 col-md-12 ">
+
+          <div class="book_name ">
+            <div class="book_title"><p><%= book.title  %></p></div>
+            <div class="book_arrow pull-right">
+             <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </div>
+          </div>
+
+
+          <div class="book_author"> by <%= book.author %></div>
+          <div class="book_rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          <div class="book_description"><p><%= book.description %></p></div>
+          <div class="lock_foot">
+            <div class="book_price">$<%= book.price %></div>
+            <button type="submit" > Add
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
       </div>
-      <div class="col-xs-8">
-        <%= book.title %><br>
-        <%= book.author %><br>
-        <%= book.description %><br />
-      </div>
-    </div>
-<% end %>
+      <span class="book_line hidden-sm hidden-md hidden-lg"><hr align="center" size="100px"  width="100%px" /></span>
+
+  <% end %>
+
+</div>
