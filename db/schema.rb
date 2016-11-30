@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161130070022) do
+ActiveRecord::Schema.define(version: 20161130070533) do
 
   create_table "books", force: :cascade do |t|
     t.string   "title"
@@ -24,6 +24,18 @@ ActiveRecord::Schema.define(version: 20161130070022) do
     t.integer  "total_rating_count"
     t.integer  "total_rating_value"
   end
+
+  create_table "cart_lines", force: :cascade do |t|
+    t.integer  "cart_id"
+    t.integer  "book_id"
+    t.integer  "quantity"
+    t.decimal  "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "cart_lines", ["book_id"], name: "index_cart_lines_on_book_id"
+  add_index "cart_lines", ["cart_id"], name: "index_cart_lines_on_cart_id"
 
   create_table "carts", force: :cascade do |t|
     t.integer  "user_id"
